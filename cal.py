@@ -40,6 +40,7 @@ def graph(a,b,c):
     ax.axhline(y=0, color = 'black')   # draw y =0 axes
     
     ax.set_ylim([-50, 50])
+    ax.set_xlim([-30, 30])
     
     ax.plot(x, a*x**2+b*x+c, label = fomula)
     ax.legend()
