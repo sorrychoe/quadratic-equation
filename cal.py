@@ -6,9 +6,11 @@ st.title("2차 방정식 계산기")
 
 st.write("---")
 
+
 def space(num_lines):
     for _ in range(num_lines):
         st.write("")
+
 
 def func(a,b,c):
     D=b**2-4*a*c
@@ -22,7 +24,8 @@ def func(a,b,c):
         st.success(f"x ={x}")
     else:
         st.info("허근입니다")
-        
+
+
 def graph(a,b,c):
     x = np.array(range(-10, 11))
     
@@ -42,10 +45,12 @@ def graph(a,b,c):
     ax.plot(x, a*x**2+b*x+c, label = fomula)
     ax.legend()
     st.pyplot(fig)
-        
+
+
 def get_latex(a,b,c):
     return f'''$y = {a}x^2 {"+" if b >= 0 else ""}{b}x {"+" if c >= 0 else ""}{c}$'''
-        
+
+
 def main():
     a = st.number_input(label="2차 =[항의 계수를 작성하시오")
     b = st.number_input(label="1차 항의 계수를 작성하시오")
@@ -61,6 +66,7 @@ def main():
         space(1)
         
         graph(a,b,c)
-        
+
+
 if __name__ == '__main__':
     main()
