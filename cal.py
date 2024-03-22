@@ -1,13 +1,10 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-
 
 st.title("2차 방정식 계산기")
 
 st.write("---")
-
 
 def space(num_lines):
     for _ in range(num_lines):
@@ -50,7 +47,7 @@ def get_latex(a,b,c):
     return f'''$y = {a}x^2 {"+" if b >= 0 else ""}{b}x {"+" if c >= 0 else ""}{c}$'''
         
 def main():
-    a = st.number_input(label="2차 항의 계수를 작성하시오")
+    a = st.number_input(label="2차 =[항의 계수를 작성하시오")
     b = st.number_input(label="1차 항의 계수를 작성하시오")
     c = st.number_input(label="상수 항의 계수를 작성하시오")
     
