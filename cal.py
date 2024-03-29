@@ -52,7 +52,7 @@ def get_latex(a,b,c):
 
 
 def main():
-    a = st.number_input(label="2차 =[항의 계수를 작성하시오")
+    a = st.number_input(label="2차 항의 계수를 작성하시오")
     b = st.number_input(label="1차 항의 계수를 작성하시오")
     c = st.number_input(label="상수 항의 계수를 작성하시오")
     
