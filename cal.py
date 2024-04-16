@@ -27,7 +27,8 @@ def func(a,b,c):
 
 
 def graph(a,b,c):
-    x = np.array(range(-10, 11))
+    x = np.array(range(-100, 101))
+    y= a*x**2+b*x+c
     
     fomula = f'''{a}x^2 { "+" if b >= 0 else ""}{b}x {"+" if c >= 0 else ""}{c}'''
     
@@ -42,7 +43,7 @@ def graph(a,b,c):
     ax.set_ylim([-30, 30])
     ax.set_xlim([-30, 30])
     
-    ax.plot(x, a*x**2+b*x+c, label = fomula)
+    ax.plot(x, y, label = fomula)
     ax.legend()
     st.pyplot(fig)
 
