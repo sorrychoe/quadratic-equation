@@ -40,8 +40,8 @@ def graph(a,b,c):
     ax.axvline(x=0, color = 'black')  # draw x =0 axes
     ax.axhline(y=0, color = 'black')   # draw y =0 axes
     
-    ax.set_ylim([-30, 30])
-    ax.set_xlim([-30, 30])
+    ax.set_ylim([-50, 50])
+    ax.set_xlim([-50, 50])
     
     ax.plot(x, y, label = fomula)
     ax.legend()
